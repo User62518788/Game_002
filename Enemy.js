@@ -19,6 +19,7 @@ class Enemy extends Entity {
         }
         if (player.health <= 0) {
             isPause = true;
+            isGameStart = false;
             player = null;
 
             setTimeout(() => {
