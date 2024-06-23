@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="display">
+            <div id="time">Time: 0</div>
+            <div id="health">Health: 10</div>
+            <div id="wave">Wave: 1</div>
+        </div>
+        <div id="game-container">
+            <canvas id="game-canvas"></canvas>
+        </div>
+        <div id="game-pause-menu" style="display: none;">
+            <div id="top">
+                <div>Menu</div>
+            </div>
+            <div id="menu-content">
+                <div id="menu-buttons">
+                    <button id="resume">Resume</button>
+                    <button>Settings</button>
+                    <button>Start Menu</button>
+                </div>
+            </div>
+        </div>
+        <div id="start-menu">
+            <div id="button-container">
+                <button id="play">Play</button>
+                <button>Settings</button>
+            </div>
+        </div>
+        <div id="top-buttons">
+            <button id="pause-button"><img src="./menu_icon.png"></button>
+        </div>
+    </body>
+    <script src="./Entity.js"></script>
+    <script src="./index.js"></script>
+    <script src="./Player.js"></script>
+    <script src="./Bullet.js"></script>
+    <script src="./Game.js"></script>
+    <script src="./Enemy.js"></script>
+    <script src="./Spawner.js"></script>
+    <script src="./Wave.js"></script>
+    <script src="./Counter.js"></script>
+</html>
